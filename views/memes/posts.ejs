@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Stream</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="header">
+        <a href="/" id="symbol">XMeme</a>
+        <a href="/" id="">CreateNew</a>
+        <a href="/posts" id="">Posts</a>
+    </div>
+    <div id="lower">
+        <% for(let meme of memes) {%>
+            <div id="post">
+                <section id="post-head">
+                    <div id="d1">
+                        <h2 id="owner"><a href="/posts/<%=meme.id%>" id="headName"><%= meme.name %></a></h2>
+                    </div>
+                    <div id="d2">
+                        <!-- <h4 id="time">(few minutes ago)</h4> -->
+                    </div>
+                    <div id="d3">
+                        <form action="/posts/<%= meme.id %>/edit" method="GET">
+                            <button onfocus="AnimationEffect" onclick="AnimationEffect">Edit</button>
+                        </form>
+                    </div>
+                </section>
+                <hr class="ruler">
+                <section>
+                    <h5 id="cap-text"><%= meme.caption %></h5>
+                </section>
+                <hr class="ruler">
+                <section id="post-foot">
+                    <img src="<%=meme.url%>" alt="This is the meme!" id="image">
+                </section>
+            </div>
+        <% }%>
+    </div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+body{
+    margin: 0px;
+    width: 100%;
+    height: 754px;
+}
+.header{
+    background-color: #6c7ef7;
+    padding: 0px;
+}
+#symbol{
+    font-size: 50px;
+    color: black;
+}
+a,a:link,a:visited{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font: 20px;
+}
+a:hover{
+    text-decoration: none;
+}
+#headName{
+    color:black;
+    margin-left: 0px;
+    font-weight: bolder;
+}
+#upper{
+    margin-top: 10%;
+    padding: 10px;
+    text-align: center;
+}
+#lower{
+    text-align: center;
+    padding: 10px;
+}
+.centered{
+    text-align: left;
+    margin: auto;
+    width: fit-content;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    border-radius: 5px;
+}
+.head{
+    margin-top: -20px;
+}
+.label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+#name{
+    font-size: 20px;
+    width: 500px;
+    height: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+#caption{
+    font-size: 20px;
+    width: 500px;
+    height: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+#url{
+    font-size: 20px;
+    width: 300px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+#submit{
+    font-size: 20px;
+    font-weight: bold;
+    width: 195px;
+    height: 34px;
+    background-color: #6c7ef7;
+    color: white;
+    margin-left: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+}
+#casing{
+    display: flex;
+}
+#post{
+    text-align: left;
+    margin: auto;
+    margin-top: 10px;
+    width: fit-content;
+    /*border: 5px solid #FFFF00;*/
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  #post-head{
+    width: 500px;
+    height: 30px;
+    display: flex;
+  }
+  #d1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 250px;
+    height: 30px;
+  }
+  #owner{
+      margin-top: 0px;  
+      margin-bottom: 0px;
+  }
+  #d2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 200px;
+    height: 30px;
+  }
+  #time{
+    margin-top: 5px;
+    font-weight: lighter;
+    margin-bottom: 0px;
+}
+  #d3{
+    padding-top: 5px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 50px;
+    height: 30px;
+    padding-bottom: 0px;
+  }
+  #cap-text{
+      margin: 0px 0px;
+  }
+  #post-foot{
+    text-align: center;
+    height: fit-content;
+  }
+  #image{
+    width: 100%; 
+    max-width: 500px; 
+    height: 100%; 
+    max-height: 300px;
+  }
+  .ruler{
+    border: 0.5px solid grey;
+  }

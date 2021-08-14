@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Meme</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <a href="/" id="symbol">XMeme</a>
+        <a href="/" id="">CreateNew</a>
+        <a href="/posts" id="">Posts</a>
+    </div>
+    <div id="upper">
+        <div class="centered">
+            <div class="head">
+                <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;font-weight: bold;">Edit Meme</h1>
+            </div>
+            <div>
+                <form action="/posts/<%= meme.id %>?_method=PATCH" method="POST">
+                    <div>
+                        <label class="label" for="caption">New Caption</label>
+                    </div>
+                    <div>
+                        <input type="text" name="caption" id="caption" placeholder="Be creative with the caption">
+                    </div>
+                    <div>
+                        <label class="label" for="url">New Meme URL</label>
+                    </div>
+                    <div id="casing">
+                        <input type="text" name="url" id="url" placeholder="Enter the URL of the meme here">
+                        <button id="submit">Edit Meme</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
