@@ -155,7 +155,8 @@ app.use((err, req, res, next) => {
     res.status(status).send(message);
 })
 
-//method to listen all the request on port 8081
-app.listen(8081, () => {
-    console.log('Listening on Port 8081!');
+//method to listen all the request on port
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+    console.log(`Listening on Port ${port}!`);
 })
