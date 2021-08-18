@@ -1,3 +1,7 @@
+if (process.env.NODE_ENV !== "production") {
+    require('dotenv').config();
+}
+
 //require all the dependencies needed
 const express = require('express');
 const app = express();
@@ -8,7 +12,7 @@ const AppError = require('./AppError');
 const Meme = require('./models/post');
 
 //set url for local db
-const dbUrl = "mongodb://localhost:27017/memeStream";
+const dbUrl = process.env.DB_URL || "mongodb://localhost:27017/memeStream";
 
 //connect to local db
 mongoose.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false, useCreateIndex: true })

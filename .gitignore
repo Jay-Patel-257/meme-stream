@@ -1,2 +1,4 @@
 #ignore dependencies while pushing
 node_modules
+
+.env
